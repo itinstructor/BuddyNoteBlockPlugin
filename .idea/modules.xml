@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NoteBlockPlugin.iml" filepath="$PROJECT_DIR$/NoteBlockPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BuddyNoteBlockPlugin.iml" filepath="$PROJECT_DIR$/BuddyNoteBlockPlugin.iml" />
     </modules>
   </component>
 </project>

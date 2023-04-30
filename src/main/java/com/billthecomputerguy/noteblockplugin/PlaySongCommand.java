@@ -6,7 +6,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import java.io.File;
-
 public class PlaySongCommand implements CommandExecutor {
 
     // Create reference variable to Main

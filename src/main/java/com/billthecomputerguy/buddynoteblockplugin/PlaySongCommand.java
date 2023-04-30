@@ -15,7 +15,7 @@ public class PlaySongCommand implements CommandExecutor {
     // Create reference variable to Main
     private Main main;
     private boolean isPlaying = false;
-
+    // Create RadioSongPlayer reference variable
     private RadioSongPlayer rsp;
 
     // Constructor with parameter of Main to access Main from this class

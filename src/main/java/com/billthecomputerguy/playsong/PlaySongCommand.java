@@ -1,4 +1,4 @@
-package com.billthecomputerguy.buddynoteblockplugin;
+package com.billthecomputerguy.playsong;
 
 import com.xxmicloxx.NoteBlockAPI.songplayer.RadioSongPlayer;
 import com.xxmicloxx.NoteBlockAPI.utils.NBSDecoder;
@@ -35,7 +35,7 @@ public class PlaySongCommand implements CommandExecutor {
                 rsp.addPlayer(player);
                 rsp.setPlaying(true);
                 isPlaying = true;
-                player.sendMessage(ChatColor.BLUE + "Song started (type buddysong to stop)");
+                player.sendMessage(ChatColor.BLUE + "Song started (type /playsong to stop)");
             } else {
                 // Stop the song
                 rsp.setPlaying(false);

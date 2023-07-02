@@ -1,8 +1,8 @@
-name: BuddyNoteBlockPlugin
+name: PlaySong
 version: '${project.version}'
-main: com.billthecomputerguy.buddynoteblockplugin.Main
+main: com.billthecomputerguy.playsong.Main
 api-version: 1.19
 depend: [NoteBlockAPI]
 commands:
-  buddysong:
+  playsong:
 

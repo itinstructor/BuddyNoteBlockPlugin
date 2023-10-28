@@ -5,7 +5,9 @@ BuddyNoteBlockPlugin is a Minecraft Bukkit plugin developed in Intellij and Core
 Buddy's Minecraft server is a project of the Computer Science program at Western Nebraska Community College.
 
 ## Version History
-- (04-30-23) V1 playsound command plays one song, playsound stops the music
+- (04-30-23) V1 The playsound command stops and starts the song 
+  - '/playsound' command plays song
+  - '/playsound' command stops the song
 
 
 ### Purpose

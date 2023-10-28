@@ -25,23 +25,41 @@ public class PlaySongCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        // Is the command sender a Player
+        // Check if the command sender is a Player
         if (sender instanceof Player) {
             // Create player instance of current player, cast to sender (the source of the command)
             Player player = (Player) sender;
+
             if (isPlaying == false) {
-                // Create RadioSongPlayer object with path from Main and file name
+                // Create a RadioSongPlayer object and load a song
+                // from the 'AllStar.nbs' file located in the plugin's data folder
                 rsp = new RadioSongPlayer((NBSDecoder.parse(new File(main.getDataFolder(), "AllStar.nbs"))));
+
+                // Add the player to the list of players for the song player
                 rsp.addPlayer(player);
+
+                // Start playing the song
                 rsp.setPlaying(true);
+
+                // Update the 'isPlaying' status
                 isPlaying = true;
+
+                // Inform the player that the song has started
                 player.sendMessage(ChatColor.BLUE + "Song started (type /playsong to stop)");
+
             } else {
+                // If a song is already playing, stop it
+
                 // Stop the song
                 rsp.setPlaying(false);
-                // Destroy the object
+
+                // Destroy the song player object to free up resources
                 rsp.destroy();
+
+                // Update the 'isPlaying' status
                 isPlaying = false;
+
+                // Inform the player that the song has stopped
                 player.sendMessage(ChatColor.BLUE + "Song stopped");
             }
         }

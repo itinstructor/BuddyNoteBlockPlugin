@@ -1,0 +1,8 @@
+name: BuddyNoteBlockPlugin
+version: '1.0'
+main: com.billthecomputerguy.buddynoteblockplugin.Main
+api-version: 1.19
+depend: [NoteBlockAPI]
+commands:
+  buddysong:
+
